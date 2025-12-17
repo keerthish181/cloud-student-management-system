@@ -4,7 +4,6 @@ server = 'student-sql-server123.database.windows.net'
 database = 'StudentDB'
 username = 'sqladmin'
 password = 'YOUR_SQL_PASSWORD'
-
 conn = pyodbc.connect(
     'DRIVER={ODBC Driver 18 for SQL Server};'
     f'SERVER={server};'
@@ -49,3 +48,4 @@ while True:
         break
 
 conn.close()
+
